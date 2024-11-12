@@ -19,4 +19,13 @@
         遍历链表：定义指针，每次循环后指向 next 指向的对象
         插入元素：将前一元素的next指向新元素，将新元素的next指向下一元素
         删除元素：将前一元素的next指向需删除元素的下一元素；如只有删除元素，将值更改为下一元素值，再删除下一元素
-    场景：反转列表、两数相加
+    场景：反转列表、两数相加、JS原型链、链表指针获取JSON节点值
+    原型链
+        对象的原型对象 Object.prototype
+        原型链通过 __proto__ 属性连接原型对象
+            obj.__proto__ = Object.prototype, 
+            func.__proto__ = Function.prototype, func.__proto__.__proto__ = Object.prototype
+            arr.__proto__ = Array.prototype, arr.__proto__.__proto__ = Object.prototype
+        场景
+            若 a.__proto__ = b.prototype，则 a instanceof b = true
+            若从 A 对象上没有找到属性 x，将沿着原型链查询 x 属性
