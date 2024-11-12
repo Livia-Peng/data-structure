@@ -7,11 +7,11 @@
 栈
     后进先出，使用array实现
     arr.push(...); arr.pop()
-    场景：十进制转二进制、有效的括号、函数调用堆栈
+    使用场景：十进制转二进制、有效的括号、函数调用堆栈
 队列
     先进先出，保证有序，使用array实现
     arr.push(...); arr.shift()
-    场景：食堂排队打饭、JS异步中的任务队列、计算最近请求次数
+    使用场景：食堂排队打饭、JS异步中的任务队列、计算最近请求次数
 链表
     元素的存储不连续，用 next 指针连在一起
     数组增删非首尾元素时往往需要移动元素，而链表只需更改next指针的指向
@@ -19,13 +19,32 @@
         遍历链表：定义指针，每次循环后指向 next 指向的对象
         插入元素：将前一元素的next指向新元素，将新元素的next指向下一元素
         删除元素：将前一元素的next指向需删除元素的下一元素；如只有删除元素，将值更改为下一元素值，再删除下一元素
-    场景：反转列表、两数相加、JS原型链、链表指针获取JSON节点值
+    使用场景：反转列表、两数相加、JS原型链、链表指针获取JSON节点值
     原型链
         对象的原型对象 Object.prototype
         原型链通过 __proto__ 属性连接原型对象
             obj.__proto__ = Object.prototype, 
             func.__proto__ = Function.prototype, func.__proto__.__proto__ = Object.prototype
             arr.__proto__ = Array.prototype, arr.__proto__.__proto__ = Object.prototype
-        场景
+        使用场景
             若 a.__proto__ = b.prototype，则 a instanceof b = true
             若从 A 对象上没有找到属性 x，将沿着原型链查询 x 属性
+集合
+    无序且唯一的数据结构，元素不可重复，使用 ES6 中的 Set 实现
+    使用场景：去重、判断元素是否在集合中、求交集等
+    ES6 Set
+        方法：add、has、delete、clear
+        属性：size
+        迭代遍历：
+            for (let item of mySet) {}
+            for (let item of mySet.keys()) {}
+            for (let item of mySet.values()) {}
+            for (let [key, value] of mySet.entries()) {}  // key = value
+        转换数组：
+            [...mySet]、Array.from(mySet)
+字典
+    以键值对形式存储唯一值的数据结构，使用 ES6 中的 Map 实现
+    使用场景：键值对的增删改查
+    ES6 Map
+        方法：set(k, v)、delete(k)、clear()、get(k)
+        属性：size
