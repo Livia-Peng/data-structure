@@ -1,4 +1,4 @@
-const tree = require('./tree.js');
+const tree = require('./data/tree.js');
 
 // 深度优先遍历 depth-first
 const dfs = (root, floor = 0) => {

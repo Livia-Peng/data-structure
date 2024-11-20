@@ -1,4 +1,4 @@
-const bt = require('./bt.js');
+const bt = require('./data/bt.js');
 
 const inorder1 = (root) => {
     if (!root) return;

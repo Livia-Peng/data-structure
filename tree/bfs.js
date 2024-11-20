@@ -1,4 +1,4 @@
-const tree = require('./tree.js');
+const tree = require('./data/tree.js');
 
 // 广度优先遍历 breadth-first
 const bfs = (root) => {

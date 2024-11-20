@@ -40,5 +40,5 @@ var levelOrder = function (root) {
     return res
 };
 
-const bt = require('./bt.js');
+const bt = require('./data/bt.js');
 levelOrder(bt)

@@ -1,4 +1,4 @@
-const bt = require('./bt.js');
+const bt = require('./data/bt.js');
 
 const preorder1 = (root) => {
     if (!root) return;
