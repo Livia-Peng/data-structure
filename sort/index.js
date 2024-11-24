@@ -45,7 +45,7 @@ Array.prototype.insertionSort = function () {
     }
 }
 
-/* 插入排序
+/* 归并排序
 *  递归拆分数组，直至数组为单个数字，并在递归中对拆分的数组进行合并(合并的同时进行排序)
 */
 Array.prototype.mergeSort = function () {
